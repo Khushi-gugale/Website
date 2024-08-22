@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+	<met charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Drop down menu</title>
+	
+</head>
+<body>
+	<h1>Choose a  Website</h1>
+	<label for="links">Select a Website:</label>
+	<select id="links" name="links" onchange="goTopage()">
+		<option value="">--Select a Website--</option>
+		<option value="https://www.google.com">Google</option>
+		<option value="https://www.yahoo.com">Yahoo</option>
+		<option value="https://www.google.com/maps/place/New+Arts,+Commerce+and+Science+college+ahmednagar,+Commerce+Building/@19.1035336,74.7271249,610m/data=!3m1!1e3!4m10!1m2!2m1!1snew+arts+college+ahmednagar!3m6!1s0x3bdcb1ad4b62c863:0x4e6b010bbfa85cb9!8m2!3d19.1035374!4d74.7311497!15sChtuZXcgYXJ0cyBjb2xsZWdlIGFobWVkbmFnYXKSAQdjb2xsZWdl4AEA!16s%2Fg%2F11h6ddzqcy?entry=ttu">Current Location</option>
+	</select>
+	<script>
+		function goTopage(){
+		  var selectBox=document.getElementById("links");
+		  var url=selectBox.value;
+	 	  if (url){
+			window.location.href=url;
+		  }
+		}
+	</script>
+</body>
+</html>
+
